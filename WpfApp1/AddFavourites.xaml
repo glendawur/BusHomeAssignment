@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.AddFavourites"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+           Title="AddFavourites" Height="370" Width="300" Background="DeepSkyBlue" Foreground="White" MinHeight="370" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            
+            
+        </Grid.ColumnDefinitions>
+        <TextBlock Width="100" Height="20" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" TextAlignment="Center" FontSize="17">Favourites</TextBlock>
+        <TextBox Name="Comment"  Width="100" Height=" 20" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" TextAlignment="Center" FontSize="15">Comment</TextBox>
+        <Button Name="SaveCommentButton" Click="Button_SaveComment" Width="30" Height="30" VerticalAlignment="Center" Grid.Column="3" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontSize="10" Background="SteelBlue" Foreground="White">Save</Button>
+        <ListBox Name="Favourites" Background="SteelBlue" Foreground="White" Height="100" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"></ListBox>
+        <Button Name="Choose" Background="SteelBlue" Foreground="White" Grid.Row="2" Grid.Column="1" Width="70" Height="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Choose">Choose</Button>
+        <Button Name="Remove" Background="SteelBlue" Foreground="White" Grid.Row="2" Width="70" Grid.Column="2" Height="20" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Remove">Remove</Button>
+        <ListBox Name="AllStations" Background="SteelBlue" Foreground="White" Height="100" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"></ListBox>
+        <Button Name="Add" Background="SteelBlue" Foreground="White" Grid.Row="4" Width="70" Height="20" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Click="Button_Add">Add</Button>
+        <Button Name="Back" Background="SteelBlue" Foreground="White" Grid.Row="4" Width="70" Height="20" HorizontalAlignment="Center" Grid.Column="2" VerticalAlignment="Center" Click="Button_Back">Back</Button>
+
+    </Grid>
+</Window>

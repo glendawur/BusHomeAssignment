@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 0,
+    "UserId": 1,
+    "Login": "dd",
+    "Password": "/OqSD3QStdp74M9CuMk3WQ==",
+    "Email": "adsaf",
+    "FavouriteStations": []
+  },
+  {
+    "Id": 0,
+    "UserId": 2,
+    "Login": "Andrew",
+    "Password": "VWPjUHXc4iC9KBhzlx5Vgg==",
+    "Email": "glndwr",
+    "FavouriteStations": []
+  },
+  {
+    "Id": 0,
+    "UserId": 3,
+    "Login": "admin",
+    "Password": "ISMvKXpXpadDiUoOSoAfww==",
+    "Email": "email",
+    "FavouriteStations": [
+      {
+        "Id": 0,
+        "Comment": "Friend",
+        "UserId": 3,
+        "StationId": 2
+      },
+      {
+        "Id": 0,
+        "UserId": 3,
+        "Comment": "Home",
+        "StationId": 3
+      }
+    ]
+  },
+  {
+    "Id": 0,
+    "UserId": 4,
+    "Login": "Batya",
+    "Password": "shhfwe245tge==",
+    "Email": "Sharik@batya.com",
+    "FavouriteStations": []
+  }
+]
